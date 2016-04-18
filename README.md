@@ -6,6 +6,9 @@ For Statamic V2.x
 
 Loop over something n times or between a range.
 
+## Installation
+Drop `Loop` folder in your `site/addons`
+
 ## Parameters
 
 * `from`: Where to begin the loop. Defaults to `1`.
