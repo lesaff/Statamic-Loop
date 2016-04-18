@@ -1,0 +1,6 @@
+name: Loop
+version: 1.0.0
+description: Loop over something n times or between a range. 
+url: https://github.com/pixelfear/statamic-loop
+developer: Jason Varga & Rudy Affandi
+developer_url: https://github.com/pixelfear
