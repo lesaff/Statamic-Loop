@@ -17,7 +17,6 @@ class LoopTags extends Tags
         $from    = $this->getInt('from', 1);
         $to      = $this->getInt('to', null);
         $times   = $this->getInt('times', null);
-        $end     = $end = ($times) ? ($from + $times) : $to;
         $vars    = [];
 
         // Loop by times
@@ -31,7 +30,7 @@ class LoopTags extends Tags
 
         // Loop by from - to ascending
         if ($to && $from < $to) {
-            for ($i = $from; $i <= $end; $i++) {
+            for ($i = $from; $i <= $to; $i++) {
                 $vars[] = array(
                     'value' => $i
                 );
@@ -40,7 +39,7 @@ class LoopTags extends Tags
 
         // Loop by from - to descending
         if ($to && $from > $to) {
-            for ($i = $from; $i >= $end; $i--) {
+            for ($i = $from; $i >= $to; $i--) {
                 $vars[] = array(
                     'value' => $i
                 );
