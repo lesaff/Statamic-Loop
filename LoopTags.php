@@ -22,7 +22,7 @@ class LoopTags extends Tags
 
         // Loop by times
         if ($times) {
-            for ($i = $from; $i <= $end; $i++) {
+            for ($i = 0; $i < $times; $i++) {
                 $vars[] = array(
                     'value' => $i
                 );
